@@ -1,39 +1,95 @@
-<footer class="web-footer">
-	<section class="footer-links">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 text-left">
-					{% if footer_items -%}
+<footer class="web-footer" id="footer">
+				<div class="foot_map">
 					<div class="row">
-						{% include "templates/includes/footer/footer_items.html" %}
+								<div class ="col-xs-12">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7427225282354!2d103.93359621416936!3d1.3304414990296474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3d4a26ad435b%3A0xac41ee8b937425c4!2sIB+Globistiz+Pte+Ltd!5e0!3m2!1sen!2ssg!4v1493548479929" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						</div>
+				</div>
+				<!-- footer cent -->
+				<div class="footer-cent bg-shark">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-3 column1">
+								<div class="compy">
+								<h5>IB GLOBISTIZ PTE LTD</h5>
+								<p><b>About Us</b></p>
+								<p>IB Globistiz has been a reliable partner in the field of logistics and cargo forwarding offering a host of logistic management services and supply chain solutions and works really hard to satisfy our customer everywhere!</p>
+								</div></div>
+							<div class="col-xs-4 col-sm-6 col-md-3 column2">
+								<div class="site-menu">
+								<h5>Site Menu</h5>
+                    <ul class="list-unstyled">
+                     <li><a href="corporate.html"><i class="fa fa-caret-right"></i> CORPORATE</a></li>
+                     <li><a href="services.html"><i class="fa fa-caret-right"></i> SERVICES</a></li>
+                     <li><a href="tracking.html"><i class="fa fa-caret-right"></i> TRACKING</a></li>
+                     <li><a href="schedule.html"><i class="fa fa-caret-right"></i> SCHEDULE</a></li>
+                     <li><a href="news.html"><i class="fa fa-caret-right"></i> NEWS</a></li>
+                     <li><a href="links.html"><i class="fa fa-caret-right"></i> LINKS</a></li>
+                     <li><a href="contact.html"><i class="fa fa-caret-right"></i> CONTACT</a></li>
+                    </ul>
+								</div>
+							</div>
+							<div class="col-xs-8 col-sm-6 col-md-3 info-box column3">
+								<!-- f get touch -->
+								<div class="f-get-touch">
+									<h5>Get in touch</h5>
+									<span class="ophours"><i class="fa fa-clock-o" aria-hidden="true"></i>Operating Hours:<br>Mon - Sat 9am to 6pm</span>
+									<address><i class="fa fa-map-marker"></i>114 Bedok North street 2<br>#11-232 Singapore 460114</address>
+									<a href="mailto:general@ibglobistiz.com" class="email"><i class="fa fa-envelope-o"></i>general@ibglobistiz.com</a>
+									<a href="tel:+6590045513" class="tel"><i class="fa fa-phone"></i>+65 90045513 / 84980281</a>
+									<a href="facebook.com/ibglobistiz" class="fb"><i class="fa fa-facebook"></i>/ibglobistiz</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 column4 clearfix-sm">
+								<!-- f mailing form -->
+								<div class="f-mailing-form">
+									<h5>Mailing List</h5>
+									<!-- Begin MailChimp Signup Form -->
+									<div id="mc_embed_signup" class="mailing-form">
+											<div id="mc_embed_signup_scroll">
+												<div class="mc-field-group">
+										<label for="mce-EMAIL">Please enter your email address for our mailing list to keep your self our lastest updated.</label>
+	<input class="form-control email" type="text" id="footer-subscribe-email"
+		placeholder="{{ _('Your email address') }}...">
+									</div>
+												<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+												<div style="position: absolute; left: -5000px;"><input type="text" name="b_cb2d5a07fdf0d86c96f260674_1103b14a3b" tabindex="-1" value=""></div>
+												<div class="clear">
+													<button type="button" class="btn btn-send button" name="subscribe" id="footer-subscribe-button"><i class="fa fa-heart"></i> {{ _("Get Updates") }}</button>
+												</div>
+											</div>
+									</div>
+									<!--End mc_embed_signup-->
+								</div>
+							</div>
+						</div>
 					</div>
-					{% endif %}
 				</div>
-
-				<div class="col-sm-6 text-right">
-					{% block extension %}
-						{% include "templates/includes/footer/footer_extension.html" %}
-					{% endblock %}
+				<!-- footer bottom -->
+				<div class="bg-dark-jungle footer-bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="bottom-box1">
+									<!-- footer-nav -->
+									<p class="copyright">2017 © IB Globistiz.<br>All Rights Reserved.</p>
+									<div class="footlogo">
+								    <a href="index.html">
+									<img src="/files/logo150.png" alt="IB Globistiz" class="img-responsive">
+								   </a>
+							   </div>
+									<div class="footer-social">
+							<ul>
+								<li><a href="https://www.facebook.com/sharer/sharer.php?u=ibglobistiz.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com/home?status=ibglobistiz.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://plus.google.com/share?url=ibglobistiz.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.linkedin.com/shareArticle?mini=true&url=ibglobistiz.com&title=&summary=&source="><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="row footer-bottom-line">
-				<div class="text-muted small col-sm-6 col-xs-12">
-					{% if copyright %}
-						&copy; {{ copyright }}
-					{% endif %}
-					{% if footer_address %}
-						{% if copyright %}<br>{% endif %}
-						{{ footer_address }}
-					{% endif %}
-				</div>
-				{# powered #}
-				<div class="text-muted small col-sm-6 col-xs-12
-					text-right footer-powered">
-					{% block powered %}
-						{% include "templates/includes/footer/footer_powered.html" %}
-					{% endblock %}
-				</div>
-			</div>
-		</div>
-	</section>
-</footer>
+			</footer>

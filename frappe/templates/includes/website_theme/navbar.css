@@ -1,11 +1,8 @@
 .navbar {
-	background-color: {{ theme.top_bar_color }};
+	background-color: transparent;
 	background-repeat: repeat-x;
 	background-image: none;
 	border: none;
-	border-bottom: 1px solid {{ get_shade(theme.top_bar_color, 10) }};
-	padding-top: 15px;
-	padding-bottom: 15px;
 }
 
 .navbar .navbar-text,
@@ -92,7 +89,7 @@
 }
 
 .nav .dropdown-menu {
-	min-width: 200px;
+	min-width: 100px;
 	padding: 0px;
 	font-size: 85%;
 
